@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<h1>{{title}} app is running </h1>
+<div class="wrapper">
+<main class="main">
+  <div lass="info-content">
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <ul class="hnom">
+          <li>Nombre: {{nombre}}</li>
+          <li>Curso: {{curso}}</li>
+          <li>Descripcion: {{descripcion}}</li>
+        </ul>
+      </div>
+      <div class="col">
+        <img src= "./../assets/img/ForaneoBlack.jpg" class="foto" alt='David Becerra'>
+
+      </div>
+    </div>
+  </div>
+  
+</main>
+<div class="d-flex justify-content-center mt-5">
+  <router-outlet></router-outlet>
+</div>
+
+
+</div>
+
+<app-footer></app-footer>

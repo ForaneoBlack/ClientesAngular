@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
+body    {
+    font-family: 'Trocchi', serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: #A83E3E;
+    color: white;
+    margin: 0;
+}
+
+.foto{
+    width: 200px;
+}
+.hnom {
+    font-size: 1.5em;
+    list-style-type: none;
+}
+
+.header {
+    background-color: black;
+    color: white;
+}

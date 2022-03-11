@@ -1,0 +1,40 @@
+<div class="card-group" style="color: black;">
+    <div class="card card text-white bg-dark mb-3">
+      <div *ngFor="let proveedor of prov; first as isFirst">
+        <h3 *ngIf="isFirst"> Proveedor {{proveedor.proveedor}} </h3>
+      </div>
+      <div class="card-body">
+      <div *ngFor="let proveedor of prov; first as isFirst">
+        <p *ngIf="isFirst"> Vende {{proveedor.vende}}</p>
+        <p *ngIf="isFirst"> Direccion {{proveedor.direccion}}</p>
+        <p *ngIf="isFirst"> Telefono {{proveedor.telefono}}</p>
+      </div>
+    </div>
+    </div>
+
+    
+    <div class="card card text-white bg-dark mb-3">
+      <div *ngFor="let proveedor of prov; let i=index;">
+        <h3 *ngIf= "i === 1"> Proveedor {{proveedor.proveedor}} </h3>
+      </div>
+      <div class="card-body">
+        <div *ngFor="let proveedor of prov; let i=index;">
+          <p *ngIf= "i === 1"> Vende {{proveedor.vende}}</p>
+          <p *ngIf= "i === 1"> Direccion {{proveedor.direccion}}</p>
+          <p *ngIf= "i === 1"> Telefono {{proveedor.telefono}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card text-white bg-dark mb-3">
+      <div *ngFor="let proveedor of prov; let o=index;">
+        <h3 *ngIf= "o === 2"> Proveedor {{proveedor.proveedor}} </h3>
+      </div>
+      <div class="card-body">
+        <div *ngFor="let proveedor of prov; let o=index;">
+          <p *ngIf= "o === 2"> Vende {{proveedor.vende}}</p>
+          <p *ngIf= "o === 2"> Direccion {{proveedor.direccion}}</p>
+          <p *ngIf= "o === 2"> Telefono {{proveedor.telefono}}</p>
+        </div>
+    </div>
+  </div>
